@@ -1,0 +1,18 @@
+<div class="container">
+  <form action="/surveys/<%= @survey.id %>" method="POST">
+    <% @survey.questions.each do |question|%>
+    <% @question = question %>
+   <table>
+    <tr>
+      <th><%=question.prompt%></th>
+    </tr>
+    <tr>
+      <td><%= erb :_question %></td>
+    </tr>
+    <% end %>
+  </table>
+  <input type ="submit" value="Submit">
+</form>
+</div>
+
+

@@ -1,0 +1,13 @@
+<div id="choices">
+    <form id = "edit_quest">
+        <% @questions.each do |question| %>
+        <label class="label">Prompt</label>
+        <input class="prompt" type="text" name="question_<%= question.id %>" value="<%= question.prompt %>" >
+        <% question.choices.each do |choice| %>
+        <label class="label">Choice </label>
+        <input class="choice" type="text" name="choice_<%= choice.id %>" value="<%= choice.answer %>" >
+        <% end %>
+        <% end %>
+    </form>
+</div>
+

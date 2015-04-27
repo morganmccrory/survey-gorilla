@@ -1,0 +1,16 @@
+<div class="frame">
+  <h2>Edit Survey</h2>
+<form method="post">
+  <input type="submit" value="Confirm Edits">
+  <input type="hidden" name="_method" value="PUT" />
+  <div class= "frame2">
+  <form id="sign-up" method="post" action="/surveys">
+    <label class="label" for="name"><%= @survey.title %></label>
+
+    <input id="title" type="text" name="title" value="<%= @survey.title %>" ><hr><hr>
+    <div class="edit_quest"><%= erb :_edit_questions %><hr></div>
+  </div>
+  </form>
+</div>
+
+</form>

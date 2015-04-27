@@ -1,0 +1,28 @@
+<div class="frame">
+  <h1>Create Account</h1>
+
+  <form id="sign-up" method="post" action="/users">
+    <label class="label" for="name">Name</label>
+    <input id="form_field" type="text" name="user[name]" placeholder="e.g., joe" value="<%= @user.name %>">
+    <span id="name-errors" class="errors"></span>
+
+    <label class="label" for="email">Email</label>
+    <input id="form_field" type="email" name="user[email]" placeholder="e.g., me@example.com" value="<%= @user.email %>">
+    <span id="email-errors" class="errors"></span>
+
+    <label class="label" for="gender">Gender</label>
+    <input id="form_field" type="text" name="user[gender]" placeholder="male" value="<%= @user.gender %>">
+    <span id="gender-errors" class="errors"></span>
+
+    <label class="label" for="birthday">Birthday</label>
+    <input id="form_field" type="text" name="user[birthday]" placeholder="01-01-2000" value="<%= @user.birthday %>">
+    <span id="birthday-errors" class="errors"></span>
+
+    <label class="label" for="password">Password</label>
+    <input id="form_field" type="password" name="user[password]" placeholder="6 or more characters">
+    <span id="entered_password-errors" class="errors"></span>
+
+    <div class="submit"><input type="submit" value="Sign Up"></div>
+  </form>
+
+</div>

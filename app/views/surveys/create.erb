@@ -1,0 +1,17 @@
+<div class="frame">
+  <h2>Create New Survey</h2>
+  <div class= "frame2">
+  <form id="sign-up" method="post" action="/surveys">
+    <label class="label" for="name">Survey Title</label>
+
+    <input id="title" type="text" name="survey[title]" placeholder="e.g. favorite beers" ><hr><hr>
+
+    <div class="new_quest"><%= erb :_new_question %><hr></div>
+  </div>
+    <div class="create_survey"><input type="button" value="Create New Survey"></div><br>
+
+    <div class="add_question"><input type="button" value="Add Another Question"></div><br>
+    <div class="submit_survey"><input type="submit" value="Submit Survey"></div>
+  </form>
+
+</div>

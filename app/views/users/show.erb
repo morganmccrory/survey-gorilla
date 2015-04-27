@@ -1,0 +1,35 @@
+<div class="container">
+  <h2>Welcome, <%= @user.name.capitalize %></h2>
+  <br>
+  <h3>Your Surveys:</h3>
+  <table>
+    <thead>
+      <th>Title</th>
+      <th># of Responses</th>
+      <th>Results</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </thead>
+
+    <tbody>
+      <% @surveys.each do |survey|%>
+      <tr>
+        <td><%=survey.title%></td>
+        <td><%= survey.completions.count%></td>
+        <td><a href='surveys/<%=survey.id%>/results'>Results</a></td>
+        <td><a href='surveys/<%=survey.id%>/edit'>Edit</a></td>
+        <td><a class = "delete" href='surveys/<%=survey.id%>/delete'>Delete</a></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <form method="get" action="/surveys">
+      <button class="welcome_buttons" type="submit">View Surveys to Take</button>
+  </form>
+
+  <form method="get" action="/surveys/create">
+      <button class="welcome_buttons" type="submit">Create a New Survey</button>
+  </form>
+</div>
+

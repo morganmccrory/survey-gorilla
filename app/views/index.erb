@@ -1,0 +1,19 @@
+  <div class="frame">
+
+    <h1>Survey Gorilla</h1>
+
+      <% if @error %>
+      <div class="errors"><%= @error %></div>
+      <% end %>
+
+      <form id="sign-in" method="post" action="/sessions">
+        <label class="label" for="email">Email</label>
+        <input  id="form_field" type="email" name="email" placeholder="e.g., me@example.com" value="<%= @email %>">
+        <label class="label" for="password">Password</label>
+        <input id="form_field" type="password" name="password" placeholder="6 or more characters">
+
+        <div class="submit"><input type="submit" value="Sign In"></div>
+      </form>
+
+      <a href="/users/new">Create New Account</a>
+  </div>

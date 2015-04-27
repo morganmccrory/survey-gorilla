@@ -1,0 +1,81 @@
+/**:not(body):not(html){
+<<<<<<< HEAD
+	border: 1px dashed #bebebe;
+}*/
+
+#results {
+margin-left: 47%;
+
+}
+
+#result_questions {
+margin-left: 33%;
+margin-right: 33%
+}
+.choices input{
+	width: 5em;
+}
+
+.container{
+  text-align: center;
+  width: 30em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.frame{
+  width: 20em;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+table{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.submit{
+	margin-left: 8em;
+}
+
+.submit_survey{
+  margin-left: 6em;
+  margin-right: auto;
+}
+
+*/
+.submit{
+  margin-left: 8em;
+}
+
+.submit_survey{
+  margin-left: 7em;
+  display: none;
+}
+
+.create_survey {
+  margin-left: 5em;
+}
+
+.add_question {
+  margin-left: 5em;
+  display: none;
+}
+
+.columns{
+  min-height: 100px;
+}
+
+
+.new_quest {
+  display: none;
+}
+
+#form_field{
+  width: 14em;
+}
+
+#form_field2{
+  width: 14em;
+}

@@ -1,0 +1,5 @@
+  <% @question.choices.each do |choice| %>
+  <input type="radio" id="<%= choice.id %>" name="<%= @question.prompt %>" value="<%= choice.id %>" ><%= choice.answer %>
+  <br>
+  <% end %>
+
